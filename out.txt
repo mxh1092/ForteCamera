@@ -1,0 +1,20 @@
+0.00632383 X-Position (mm)
+-9.83959e+19 Y-Position (mm)
+0.00159619 Z-Position (mm)
+0.0102851 Simulated Time (s)
+1000 Total Coincidences
+565 Active Area Coincidences
+228 True Coincidences
+171 Random Coincidences
+166 Scattered Coincidences
+92.0071 Noise Equivalent Counts
+97.2276 Total Coincidence Rate (kHz)
+54.9336 Active Area Coincidence Rate (kHz)
+22.1679 True Coincidence Rate (kHz)
+16.6259 Random Coincidence Rate (kHz)
+16.1398 Scattered Coincidence Rate (kHz)
+8.94563 Noise Equivalent Count Rate (kHz)
+0.40354 True Fraction
+0.302655 Random Fraction
+0.293805 Scatter Fraction
+
