@@ -19,12 +19,12 @@
 /gate/digitizer/Singles/pileup/setPileup  300 ns
 
 #      T I M E      R E S O L U T I O N 
-/gate/digitizer/Singles/insert                              timeResolution
-/gate/digitizer/Singles/timeResolution/setTimeResolution    16 ns
+#/gate/digitizer/Singles/insert                              timeResolution
+#/gate/digitizer/Singles/timeResolution/setTimeResolution    16 ns
 
 
-/gate/digitizer/Singles/insert spblurring
-/gate/digitizer/Singles/spblurring/setSpresolution 5.0 mm
+#/gate/digitizer/Singles/insert spblurring
+#/gate/digitizer/Singles/spblurring/setSpresolution 5.0 mm
 #/gate/digitizer/Singles/spblurring/verbose 1
 
 
@@ -54,31 +54,30 @@
 /gate/digitizer/EWindow/upholder/setUphold          640 keV
 
 
-#	    C O I N C I D E N C E    S O RT E R 
+#	    C O I N C I D E N C E    S O R T E R 
 /gate/digitizer/Coincidences/setInputName           EWindow
 /gate/digitizer/Coincidences/setWindow              15 ns
 /gate/digitizer/Coincidences/minSectorDifference    1
 /gate/digitizer/Coincidences/describe
-
 /gate/digitizer/Coincidences/MultiplesPolicy takeWinnerOfGoods
 
-/gate/digitizer/name                                delay
-/gate/digitizer/insert                              coincidenceSorter
-/gate/digitizer/delay/setInputName                  EWindow
-/gate/digitizer/delay/setWindow                     15. ns
-/gate/digitizer/delay/setOffset                     500. ns
-/gate/digitizer/delay/minSectorDifference    1
-/gate/digitizer/delay/describe
+#/gate/digitizer/name                                delay
+#/gate/digitizer/insert                              coincidenceSorter
+#/gate/digitizer/delay/setInputName                  EWindow
+#/gate/digitizer/delay/setWindow                     15. ns
+#/gate/digitizer/delay/setOffset                     500. ns
+#/gate/digitizer/delay/minSectorDifference    1
+#/gate/digitizer/delay/describe
 #/gate/digitizer/delay/MultiplesPolicy takeWinnerOfGoods
 
-/gate/digitizer/name                                	finalCoinc
-/gate/digitizer/insert                              	coincidenceChain
-/gate/digitizer/finalCoinc/addInputName             	delay
-/gate/digitizer/finalCoinc/addInputName             	Coincidences
-/gate/digitizer/finalCoinc/describe
-/gate/digitizer/finalCoinc/usePriority              	false
-/gate/digitizer/finalCoinc/insert deadtime
-/gate/digitizer/finalCoinc/deadtime/setDeadTime		1.15 us
-/gate/digitizer/finalCoinc/deadtime/setMode nonparalysable
+#/gate/digitizer/name                                	finalCoinc
+#/gate/digitizer/insert                              	coincidenceChain
+#/gate/digitizer/finalCoinc/addInputName             	delay
+#/gate/digitizer/finalCoinc/addInputName             	Coincidences
+#/gate/digitizer/finalCoinc/describe
+#/gate/digitizer/finalCoinc/usePriority              	false
+#/gate/digitizer/finalCoinc/insert deadtime
+#/gate/digitizer/finalCoinc/deadtime/setDeadTime		1.15 us
+#/gate/digitizer/finalCoinc/deadtime/setMode nonparalysable
 
 

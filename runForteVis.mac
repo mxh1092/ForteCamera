@@ -25,7 +25,7 @@
 #                                                     
 #-------------------oooooOOOOO00000OOOOOooooo---------------------#
 
-/vis/disable
+#/vis/disable
 
 /control/execute mac/Geometry_Forte_Vis.mac
 
@@ -33,7 +33,7 @@
 
 /control/execute mac/Digitizer_Forte.mac
 
-/control/execute mac/Phantom_Source_Small.mac
+/control/execute mac/Phantom_Source_Small_Vis.mac
 
 #====================================================
 #   M E A S U R E M E N T   S E T T I N G S   

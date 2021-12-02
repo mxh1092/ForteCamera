@@ -39,7 +39,7 @@
 
 # S O U R C E
 /gate/source/addSource twogamma
-/gate/source/twogamma/setActivity 1 MBq
+/gate/source/twogamma/setActivity 0.01 MBq
 /gate/source/twogamma/setType backtoback
 
 # POSITION

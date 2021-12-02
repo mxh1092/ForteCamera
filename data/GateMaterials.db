@@ -515,3 +515,16 @@ CoffeeBean: d=0.7 g/cm3; n=4; state=Solid
 	+el: name=Hydrogen; f=0.474
 	+el: name=Oxygen; f=0.215
 	+el: name=Nitrogen; f=0.003
+
+
+MCC_Bulk: d=1.0 g/cm3; n=3; state=Solid
+        +el: name=Carbon; n=6
+        +el: name=Hydrogen; n=10
+        +el: name=Oxygen; n=5
+
+Perspex: d=1.18 g/cm3; n=3; state=Solid
+        +el: name=Carbon; n=5
+        +el: name=Hydrogen; n=8
+        +el: name=Oxygen; n=2  
+
+
